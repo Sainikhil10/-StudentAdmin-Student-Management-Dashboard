@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StudentAdmin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎓 StudentAdmin</h1>
+  </header>
+
+  <section class="form-section">
+    <input id="name" placeholder="Name" />
+    <input id="roll" placeholder="Roll No" />
+    <input id="dept" placeholder="Department" />
+    <input id="year" type="number" placeholder="Year" />
+    <button onclick="addStudent()">Add Student</button>
+  </section>
+
+  <section class="filters">
+    <select id="dept-filter" onchange="filterStudents()">
+      <option value="All">All Departments</option>
+      <option value="CSE">CSE</option>
+      <option value="ECE">ECE</option>
+      <option value="EEE">EEE</option>
+    </select>
+
+    <select id="year-filter" onchange="filterStudents()">
+      <option value="All">All Years</option>
+      <option value="1">1st Year</option>
+      <option value="2">2nd Year</option>
+      <option value="3">3rd Year</option>
+      <option value="4">4th Year</option>
+    </select>
+  </section>
+
+  <main id="student-list"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
