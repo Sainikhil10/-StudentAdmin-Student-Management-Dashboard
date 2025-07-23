@@ -1,0 +1,64 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  background: #1e3a8a;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.form-section,
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+input, select, button {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin: 0 0 5px;
+}
+
+.card button {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
